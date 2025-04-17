@@ -16,4 +16,10 @@ public class HelloController {
       return messageUtils.getMessage();
     }
 
+    @GetMapping("/bye")
+    public String byr() {
+        messageUtils.setMessage("Bye World!");
+        return messageUtils.getMessage();
+    }
+
 }
